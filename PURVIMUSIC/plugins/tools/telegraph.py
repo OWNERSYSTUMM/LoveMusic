@@ -37,7 +37,7 @@ async def get_link_group(client, message):
         return await message.reply_text("Pʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ᴍᴇᴅɪᴀ ғɪʟᴇ ᴜɴᴅᴇʀ 200MB.")
 
     try:
-        text = await message.reply("Pʀᴏᴄᴇssɪɴɢ...")
+        text = await message.reply("❍ ʜᴏʟᴅ ᴏɴ ʙᴀʙʏ....♡")
 
         async def progress(current, total):
             try:
@@ -58,7 +58,7 @@ async def get_link_group(client, message):
                         [
                             [
                                 InlineKeyboardButton(
-                                    "𝖢ʀᴇᴀᴛᴇ ʙʏ 𝖳ᴇᴀᴍ 𝖯ᴜʀᴠɪ 𝖳ᴀᴘ ᴛᴏ 𝖲ᴇᴇ",
+                                    " ᴄʀᴇᴀᴛᴇ ʙʏ sʏsᴛᴜᴍ-ᴍᴜsɪᴄ ᴛᴀᴘ ᴛᴏ sᴇᴇ ",
                                     url=upload_path,
                                 )
                             ]
