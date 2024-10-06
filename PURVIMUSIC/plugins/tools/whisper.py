@@ -56,11 +56,11 @@ async def _whisper(_, inline_query):
                     reply_markup=whisper_btn
                 ),
                 InlineQueryResultArticle(
-                    title="🔩 One-Time Whisper",
+                    title="😍 Whisper",
                     description=f"Send a one-time whisper to {user.first_name}!",
-                    input_message_content=InputTextMessageContent(f"🔩 You are sending a one-time whisper to {user.first_name}.\n\nType your message/sentence."),
+                    input_message_content=InputTextMessageContent(f"🔩 You are sending a whisper to {user.first_name}.\n\nType your message/sentence."),
                     thumb_url="https://telegra.ph/file/a9cdad2a972022f082903.jpg",
-                    reply_markup=one_time_whisper_btn
+                    reply_markup=whisper_btn
                 )
             ]
         except:
