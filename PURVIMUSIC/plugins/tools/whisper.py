@@ -85,7 +85,7 @@ async def whispes_cb(_, query):
     if user_id not in [from_user, to_user, 7299227823]:
         try:
             await _.send_message(from_user, f"{query.from_user.mention} is trying to open your whisper.")
-        except Unauthorized:
+        except:
             pass
         
         return await query.answer("This whisper is not for you 🚧", show_alert=True)
