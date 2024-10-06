@@ -1,5 +1,6 @@
 from PURVIMUSIC import app as app
 from config import BOT_USERNAME
+from whisper_db import unauthorised 
 from pyrogram import filters
 from pyrogram.types import (
     InlineQueryResultArticle, InputTextMessageContent,
@@ -85,7 +86,7 @@ async def whispes_cb(_, query):
     if user_id not in [from_user, to_user, 7299227823]:
         try:
             await _.send_message(from_user, f"{query.from_user.mention} is trying to open your whisper.")
-        except:
+        except unauthorised:
             pass
         
         return await query.answer("This whisper is not for you 🚧", show_alert=True)
