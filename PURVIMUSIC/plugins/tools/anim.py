@@ -1,7 +1,7 @@
 import random
 import asyncio
 from pyrogram import Client, filters
-from ..  import app
+from PURVIMUSIC import app
 
 # Create a list of emojis
 emojis = [
